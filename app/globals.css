@@ -1,26 +1,146 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scrollbar-gutter: stable;
   }
+}
+
+/* Light */
+:root {
+  /* Main page background */
+  --background: #fafafa;
+
+  /* Cards, navbar, panels */
+  --surface: #ffffff;
+
+  /* Hovered cards, buttons, inputs */
+  --surface-hover: #f4f4f5;
+
+
+  /* Main text and headings */
+  --foreground: #18181b;
+
+  /* Secondary text */
+  --muted: #71717a;
+
+  /* Very subtle or disabled text */
+  --muted-foreground: #a1a1aa;
+
+
+  /* Card, input, and button borders */
+  --border: #e4e4e7;
+
+  /* Subtle separators between sections */
+  --divider: #f1f1f3;
+
+
+  /* Main accent color: Call To Action buttons, links, highlights */
+  --primary: #2563eb;
+
+  /* Accent color on hover */
+  --primary-hover: #1d4ed8;
+
+  /* Text/icons placed on primary backgrounds */
+  --primary-foreground: #ffffff;
+
+
+  /* Success states */
+  --success: #16a34a;
+
+  /* Warning states */
+  --warning: #d97706;
+
+  /* Error/danger states */
+  --danger: #dc2626;
+
+  
+  /* Shadows around elevated elements */
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* Dark */
+.dark {
+  --background: #09090b;
+  --surface: #18181b;
+  --surface-hover: #27272a;
+
+  --foreground: #fafafa;
+  --muted: #a1a1aa;
+  --muted-foreground: #71717a;
+
+  --border: #27272a;
+  --divider: #3f3f46;
+
+  --primary: #3b82f6;
+  --primary-hover: #60a5fa;
+  --primary-foreground: #ffffff;
+
+  --success: #22c55e;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+
+  --shadow: rgba(0, 0, 0, 0.35);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.txt {
+  @apply text-sm text-[var(--muted)] leading-7;
+}
+
+.wrapper {
+  @apply mx-auto w-full max-w-300 px-4 py-2;
+}
+
+.button-primary {
+  @apply flex h-14 w-52 items-center justify-center rounded-full
+    bg-(--primary) text-(--primary-foreground)
+    font-semibold transition duration-200
+    hover:bg-(--primary-hover)
+    active:scale-95;
+}
+
+.button-secondary {
+  @apply flex h-14 w-52 items-center justify-center rounded-full
+    border border-(--border)
+    bg-(--surface) text-(--foreground)
+    font-semibold transition duration-200
+    hover:bg-(--surface-hover)
+    active:scale-95;
+}
+
+.card-border {
+  @apply rounded-2xl border border-(--border)
+    bg-(--surface)
+    transition duration-200
+    hover:border-(--primary);
+}
+
+.dim-bg-effect {
+  @apply bg-(--background) transition duration-150
+    hover:bg-(--surface-hover);
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-tight text-(--foreground);
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-(--muted) leading-7;
+}
+
+.nav-link {
+  @apply text-sm text-(--muted) transition
+    hover:text-(--foreground);
+}
+
+.tag {
+  @apply rounded-full border border-(--border)
+    bg-(--surface-hover)
+    px-3 py-1 text-xs font-medium
+    text-(--muted);
 }
