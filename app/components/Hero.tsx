@@ -1,10 +1,15 @@
 import Image from "next/image";
+import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { RxDividerVertical, RxGithubLogo } from "react-icons/rx";
 
 export default function Hero() {
+  const [frappe, setFrappe] = useState<Boolean>(false);
+
   return (
     <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row my-20">
+      <div className={`fixed inset-0 frappe ${frappe ? "flex" : "hidden"}`} />
+
       <div className="flex flex-col flex-1 md:flex-1/4 text-center md:text-start items-center md:items-start">
         <p className="text-base text-(--muted)">Hello, I&apos;m</p>
 
@@ -30,7 +35,12 @@ export default function Hero() {
         </p>
 
         <div className="mt-6 flex gap-4 justify-center md:justify-start">
-          <button className="button-primary ">Projects</button>
+          <button
+            className="button-primary "
+            onClick={() => setFrappe((prev) => !prev)}
+          >
+            Projects
+          </button>
           <a href="/assets/resume.pdf">
             <button className="button-secondary">Resume</button>
           </a>

@@ -23,7 +23,7 @@ export default function Projects() {
       </div>
       <div className="flex flex-col md:flex-row gap-6 md:gap-8">
         {projects?.map((elem) => {
-          return <ProjectCard projectDetail={elem} />;
+          return <ProjectCard projectDetail={elem} key={elem.id} />;
         })}
       </div>
     </section>

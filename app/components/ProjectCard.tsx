@@ -22,7 +22,6 @@ export default function ProjectCard({
   };
 }) {
   const {
-    id,
     name,
     year,
     image,
@@ -34,17 +33,18 @@ export default function ProjectCard({
   } = projectDetail;
 
   return (
-    <article
-      className="group flex-1 overflow-hidden rounded-2xl border border-(--border) bg-(--surface) duration-200  hover:border-(--primary)"
-      key={id}
-    >
-      <div className="relative aspect-video overflow-hidden bg-(--surface-hover)">
-        <Image
-          src={image}
-          alt={imageAlt}
-          fill
-          className="object-cover duration-200 group-hover:scale-102"
-        />
+    <article className="group flex-1 overflow-hidden rounded-2xl border border-(--border) bg-(--surface) duration-200  hover:border-(--primary) shadow-xs ">
+      <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-10 flex justify-center items-center">
+        <figure className="relative rounded-2xl overflow-hidden w-full h-full border border-(--white)">
+          <Image
+            src={image}
+            alt={imageAlt}
+            fill
+            className="object-cover duration-200 group-hover:scale-105 "
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            loading="eager"
+          />
+        </figure>
       </div>
 
       <div className="p-6">
@@ -67,7 +67,7 @@ export default function ProjectCard({
           {technologies?.map(({ id, name, color }) => {
             return (
               <span
-                className={`rounded-md bg-(--surface-hover) px-2.5 py-1 font-mono text-xs ${color}`}
+                className={`rounded-md bg-(--surface-hover) px-2.5 py-1 font-mono text-xs font-bold ${color}`}
                 key={id}
               >
                 {name}

@@ -5,7 +5,7 @@
     "year": 2026,
     "image": "/assets/projects/shopup.png",
     "imageAlt": "ShopUp e-commerce application",
-    "description": "Built a full-stack e-commerce platform with custom session-based authentication, robust RESTful APIs, and complete product, cart, checkout, and order management.",
+    "description": "A full-stack e-commerce platform featuring custom session-based authentication, robust RESTful APIs, and complete product, cart, checkout, and order management.",
     "technologies": [
       {
         "id": 1,
@@ -37,7 +37,7 @@
     "year": 2026,
     "image": "/assets/projects/youthlink.png",
     "imageAlt": "YouthLink Network ISP marketing website",
-    "description": "Built a responsive ISP marketing website with dynamic pricing, SEO optimization, optimized image and font loading, WhatsApp integration, and Google Maps integration.",
+    "description": "A responsive ISP marketing website featuring dynamic pricing, SEO optimization, optimized image and font loading, WhatsApp integration, and Google Maps integration.",
     "technologies": [
       {
         "id": 1,
