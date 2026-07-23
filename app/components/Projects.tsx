@@ -1,14 +1,12 @@
-import { Star, Tag } from "lucide-react";
-import Image from "next/image";
+import { Star } from "lucide-react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
-import { RxArrowTopRight, RxGithubLogo } from "react-icons/rx";
 import projects from "@/data/projects.json";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="wrapper my-20 mb-40">
+    <section className="wrapper my-10 md:my-20">
       <div className="flex justify-between items-center mb-6 md:mb-8">
         <h2 className="section-title">
           <Star className="text-(--primary)" />
@@ -21,7 +19,7 @@ export default function Projects() {
           View All <FaArrowRight className="text-xs" />
         </Link>
       </div>
-      <div className="flex flex-col md:flex-row gap-6 md:gap-8">
+      <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
         {projects?.map((elem) => {
           return <ProjectCard projectDetail={elem} key={elem.id} />;
         })}

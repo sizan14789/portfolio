@@ -33,14 +33,14 @@ export default function ProjectCard({
   } = projectDetail;
 
   return (
-    <article className="group flex-1 overflow-hidden rounded-2xl border border-(--border) bg-(--surface) duration-200  hover:border-(--primary) shadow-xs ">
-      <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-10 flex justify-center items-center">
+    <article className="group flex-1 overflow-hidden rounded-2xl max-w-140 border border-(--border) bg-(--surface) duration-200  hover:border-(--primary) shadow-xs ">
+      <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-12 flex justify-center items-center">
         <figure className="relative rounded-2xl overflow-hidden w-full h-full border border-(--white)">
           <Image
             src={image}
             alt={imageAlt}
             fill
-            className="object-cover duration-200 group-hover:scale-105 "
+            className="object-cover duration-200 brightness-90 group-hover:brightness-100 group-hover:scale-105 "
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             loading="eager"
           />

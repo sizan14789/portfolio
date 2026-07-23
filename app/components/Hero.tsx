@@ -7,7 +7,7 @@ export default function Hero() {
   const [frappe, setFrappe] = useState<Boolean>(false);
 
   return (
-    <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row my-20">
+    <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row my-10 md:my-20">
       <div className={`fixed inset-0 frappe ${frappe ? "flex" : "hidden"}`} />
 
       <div className="flex flex-col flex-1 md:flex-1/4 text-center md:text-start items-center md:items-start">
