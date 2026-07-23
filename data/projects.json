@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "ShopUp",
+    "year": 2026,
+    "image": "/assets/projects/shopup.png",
+    "imageAlt": "ShopUp e-commerce application",
+    "description": "Built a full-stack e-commerce platform with custom session-based authentication, robust RESTful APIs, and complete product, cart, checkout, and order management.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Next.js",
+        "color": "text-[#d8b4fe]"
+      },
+      {
+        "id": 2,
+        "name": "TypeScript",
+        "color": "text-[#60a5fa]"
+      },
+      {
+        "id": 3,
+        "name": "Express.js",
+        "color": "text-[#86efac]"
+      },
+      {
+        "id": 4,
+        "name": "PostgreSQL",
+        "color": "text-[#67e8f9]"
+      }
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#"
+  },
+  {
+    "id": 2,
+    "name": "YouthLink Network",
+    "year": 2026,
+    "image": "/assets/projects/youthlink.png",
+    "imageAlt": "YouthLink Network ISP marketing website",
+    "description": "Built a responsive ISP marketing website with dynamic pricing, SEO optimization, optimized image and font loading, WhatsApp integration, and Google Maps integration.",
+    "technologies": [
+      {
+        "id": 1,
+        "name": "Next.js",
+        "color": "text-[#d8b4fe]"
+      },
+      {
+        "id": 2,
+        "name": "TypeScript",
+        "color": "text-[#60a5fa]"
+      },
+      {
+        "id": 3,
+        "name": "Tailwind CSS",
+        "color": "text-[#67e8f9]"
+      },
+      {
+        "id": 4,
+        "name": "Motion",
+        "color": "text-[#f0abfc]"
+      }
+    ],
+    "liveUrl": "#",
+    "githubUrl": "#"
+  }
+]
