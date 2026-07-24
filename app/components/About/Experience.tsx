@@ -1,0 +1,33 @@
+import { club } from "@/data/About.json";
+
+export default function Experience({ css }: { css: string }) {
+  return (
+    <article className={`flex-1 card-border px-6 py-6 group ${css}`}>
+      <h2 className="section-title text-lg! mb-2 group-hover:text-(--primary)">
+        Experience
+      </h2>
+
+      <p className="txt">
+        I contributed to my university's official{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={club.url}
+          className="highlighted-txt"
+        >
+          Competitive Programming Club
+        </a>{" "}
+        website where I designed and built the frontend layout for the{" "}
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={club.url + "jobpipeline"}
+          className="highlighted-txt"
+        >
+          Job Pipeline
+        </a>{" "}
+        page.
+      </p>
+    </article>
+  );
+}
