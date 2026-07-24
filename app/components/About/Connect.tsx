@@ -12,10 +12,15 @@ export default function Connect({ css }: { css: string }) {
         Let's Get In Touch
       </h2>
       <p className="txt mb-4">
-        I'm open to internships, part time job or freelance work.
+        I'm open to internships, part time job and freelance work.
       </p>
       <div className="flex mt-auto gap-4 items-center">
-        <button className="button-primary rounded-md! flex-1">Mail Me</button>
+        <a
+          href="mailto:sizanalt@gmail.com"
+          className="button-primary rounded-md! flex-1"
+        >
+          Mail Me
+        </a>
         <a
           href="https://www.fiverr.com/s/2KXpmeQ"
           target="blank"
