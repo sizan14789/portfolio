@@ -1,9 +1,11 @@
 import { club } from "@/data/About.json";
+import { Expand } from "lucide-react";
 
 export default function Experience({ css }: { css: string }) {
   return (
     <article className={`flex-1 card-border px-6 py-6 group ${css}`}>
       <h2 className="section-title text-lg! mb-2 group-hover:text-(--primary)">
+        <Expand size={16} className="text-(--primary)" />
         Experience
       </h2>
 

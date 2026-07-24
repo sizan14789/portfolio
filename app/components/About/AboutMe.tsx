@@ -1,3 +1,5 @@
+import { Info } from "lucide-react";
+
 export default function AboutMe({ css }: { css: string }) {
   let age = new Date().getFullYear() - new Date("2005-09-17").getFullYear();
   if (new Date().getMonth() < 9) age--;
@@ -5,6 +7,7 @@ export default function AboutMe({ css }: { css: string }) {
   return (
     <article className={`flex-1 card-border px-6 py-6 group ${css}`}>
       <h2 className="section-title text-lg! mb-2 group-hover:text-(--primary)">
+        <Info size={16} className="text-(--primary)" />
         About Me
       </h2>
       <p className="txt">
