@@ -13,6 +13,7 @@
 
   /* Text */
   --foreground: #f5f3ff;
+  --foreground-lighter: #c8c3e2;
   --muted: #aaa3b8;
   --muted-foreground: #766e85;
 
@@ -35,7 +36,7 @@
 }
 
 .frappe {
-  background-color: #ffffff16;
+  background-color: #ffffff13;
   pointer-events: none;
 }
 
@@ -60,7 +61,7 @@ body {
 }
 
 .wrapper {
-  @apply mx-auto w-full max-w-280 px-4 md:px-8;
+  @apply mx-auto w-full max-w-280 px-4 md:px-8 mb-16 md:mb-24;
 }
 
 .button-primary {
@@ -80,20 +81,20 @@ body {
     active:scale-95;
 }
 
+.section-title {
+  @apply text-[1.625rem] md:text-3xl flex items-center gap-2 font-bold tracking-wide font-mono;
+}
+
 .card-border {
-  @apply rounded-2xl border border-(--border)
-    bg-(--surface)
-    transition duration-200
-    hover:border-(--primary);
+  @apply rounded-2xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary);
+}
+
+.highlighted-txt {
+  @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200;
 }
 
 .dim-bg-effect {
-  @apply bg-(--background) transition duration-150
-    hover:bg-(--surface-hover);
-}
-
-.section-title {
-  @apply text-[1.625rem] md:text-3xl flex items-center gap-2 font-bold tracking-wide font-mono;
+  @apply bg-(--background) duration-200 hover:bg-(--surface-hover);
 }
 
 .section-subtitle {

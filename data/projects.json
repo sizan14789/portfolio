@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "ShopUp",
-    "year": 2026,
+    "year": 2025,
     "image": "/assets/projects/shopup.png",
     "imageAlt": "ShopUp e-commerce application",
     "description": "A full-stack e-commerce platform featuring custom session-based authentication, robust RESTful APIs, and complete product, cart, checkout, and order management.",

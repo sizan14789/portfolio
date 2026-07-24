@@ -1,13 +1,13 @@
 import Image from "next/image";
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
-import { RxDividerVertical, RxGithubLogo } from "react-icons/rx";
+import { RxGithubLogo } from "react-icons/rx";
 
 export default function Hero() {
   const [frappe, setFrappe] = useState<Boolean>(false);
 
   return (
-    <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row my-10 md:my-20">
+    <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row ">
       <div className={`fixed inset-0 frappe ${frappe ? "flex" : "hidden"}`} />
 
       <div className="flex flex-col flex-1 md:flex-1/4 text-center md:text-start items-center md:items-start">
@@ -22,16 +22,10 @@ export default function Hero() {
         </h2>
 
         <p className="mt-4 max-w-xl leading-7 text-(--muted)">
-          Based in <strong>Dhaka, Bangladesh</strong>. I specialize in building
-          modern web applications with{" "}
-          <strong className="font-mono text-base hover:bg-(--primary) hover:text-(--background) duration-200 ">
-            Next.js
-          </strong>{" "}
-          and{" "}
-          <strong className="font-mono text-base hover:bg-(--primary) hover:text-(--background) duration-200 ">
-            Express.js
-          </strong>
-          .
+          Based in <span className="highlighted-txt">Dhaka, Bangladesh</span>. I
+          specialize in building modern web applications with{" "}
+          <span className="font-mono highlighted-txt">Next.js</span> and{" "}
+          <span className="font-mono highlighted-txt">Express.js</span>.
         </p>
 
         <div className="mt-6 flex gap-4 justify-center md:justify-start">
@@ -46,7 +40,7 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-6 flex gap-1 text-sm text-(--muted) justify-center md:justify-start pl-3 md:pl-0 font-mono">
+        <div className="mt-6 flex gap-1.5 text-sm text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
           <a
             href="https://github.com/sizan14789"
             target="_blank"
@@ -55,7 +49,7 @@ export default function Hero() {
             <RxGithubLogo className="text-base mt-0.5 group-hover:text-(--primary)" />
             <span className="tracking-wide">Github</span>
           </a>
-          <RxDividerVertical className="text-xl" />
+          <span className="text-(--border)">|</span>
           <a
             href="https://github.com/sizan14789"
             target="_blank"
@@ -74,6 +68,7 @@ export default function Hero() {
             width={400}
             alt="Profile pic hero"
             className="object-cover "
+            loading="eager"
           />
         </figure>
       </div>

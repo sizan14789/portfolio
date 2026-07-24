@@ -1,5 +1,7 @@
 import { FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
+import { GrTechnology } from "react-icons/gr";
 import {
+  SiAgentskills,
   SiCplusplus,
   SiExpress,
   SiNextdotjs,
@@ -8,7 +10,7 @@ import {
 } from "react-icons/si";
 
 export default function Skills() {
-  const skillset = [
+  const skillSet = [
     {
       name: "Next.js",
       category: "Frontend",
@@ -72,16 +74,19 @@ export default function Skills() {
   //   };
 
   return (
-    <section className="wrapper my-10 md:my-20">
+    <section className="wrapper">
       <div className="mb-8">
-        <h2 className="section-title">Skills</h2>
+        <h2 className="section-title">
+          <GrTechnology className="text-(--primary)" />
+          Skills & Technologies
+        </h2>
       </div>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {skillset.map(({ name, category, icon: Icon, color }) => (
+        {skillSet.map(({ name, category, icon: Icon, color }) => (
           <div
             key={name}
-            className="flex items-center gap-3 rounded-xl border border-(--border) bg-(--surface) p-4 transition duration-200 hover:border-(--primary) hover:bg-(--surface-hover) group"
+            className="flex items-center gap-3 p-4 rounded-xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary) hover:bg-(--surface-hover) group"
           >
             <Icon className={`text-2xl ${color}`} />
 
@@ -95,6 +100,9 @@ export default function Skills() {
           </div>
         ))}
       </div>
+      <p className="mt-8 txt text-center md:text-start">
+        I can learn and adapt to new technologies fast.
+      </p>
 
       {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {Object.entries(skills).map(([category, technologies]) => (

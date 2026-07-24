@@ -6,7 +6,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <section className="wrapper my-10 md:my-20">
+    <section className="wrapper">
       <div className="flex justify-between items-center mb-6 md:mb-8">
         <h2 className="section-title">
           <Star className="text-(--primary)" />

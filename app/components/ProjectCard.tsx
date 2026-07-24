@@ -33,7 +33,7 @@ export default function ProjectCard({
   } = projectDetail;
 
   return (
-    <article className="group flex-1 overflow-hidden rounded-2xl max-w-140 border border-(--border) bg-(--surface) duration-200  hover:border-(--primary) shadow-xs ">
+    <article className="group flex-1 overflow-hidden max-w-140 card-border shadow-xs ">
       <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-12 flex justify-center items-center">
         <figure className="relative rounded-2xl overflow-hidden w-full h-full border border-(--white)">
           <Image
@@ -58,9 +58,7 @@ export default function ProjectCard({
           </span>
         </div>
 
-        <p className="mt-3 text-sm leading-7 text-(--muted) font-semibold">
-          {description}
-        </p>
+        <p className="mt-3 txt font-semibold line-clamp-3">{description}</p>
 
         <div className="mt-5 flex flex-wrap gap-2">
           <Tag size={16} className="mt-1" />

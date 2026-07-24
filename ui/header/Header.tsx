@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div>
+    <div className="mb-20">
       <h2>Header</h2>
     </div>
   );
