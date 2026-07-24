@@ -77,6 +77,8 @@ export default function ProjectCard({
         <div className="mt-6 flex items-center gap-2 text-sm">
           <a
             href={liveUrl}
+            rel="noopener noreferrer"
+            target="_blank"
             className="flex items-center gap-1.5 text-(--muted) hover:text-(--primary) font-semibold"
           >
             Live Demo
@@ -84,6 +86,8 @@ export default function ProjectCard({
           <span className="text-(--border)">|</span>
           <a
             href={githubUrl}
+            rel="noopener noreferrer"
+            target="_blank"
             className="flex items-center gap-1.5 text-(--muted) hover:text-(--foreground)"
           >
             <RxGithubLogo />

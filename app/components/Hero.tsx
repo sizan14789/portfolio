@@ -35,7 +35,11 @@ export default function Hero() {
           >
             Projects
           </button>
-          <a href="/assets/resume.pdf">
+          <a
+            href="/assets/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="button-secondary">Resume</button>
           </a>
         </div>
@@ -44,6 +48,7 @@ export default function Hero() {
           <a
             href="https://github.com/sizan14789"
             target="_blank"
+            rel="noopener noreferrer"
             className="transition hover:text-(--foreground) flex gap-1.5 group items-center"
           >
             <RxGithubLogo className="group-hover:text-(--primary)" />
@@ -53,6 +58,7 @@ export default function Hero() {
           <a
             href="https://github.com/sizan14789"
             target="_blank"
+            rel="noopener noreferrer"
             className="transition hover:text-(--foreground) flex items-center gap-1.5 group "
           >
             <FaLinkedin className="group-hover:text-(--primary)" />

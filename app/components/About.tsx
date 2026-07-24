@@ -11,9 +11,10 @@ export default function About() {
 
         <Education css="" />
 
-        <Connect css="" />
+        <Connect css="hidden md:flex" />
       </div>
       <Experience css="" />
+      <Connect css="md:hidden" />
     </section>
   );
 }

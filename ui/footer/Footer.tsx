@@ -32,7 +32,7 @@ export default function Footer() {
 
   return (
     <footer className="mt-auto border-t border-(--border)">
-      <div className="wrapper my-0! flex gap-4 py-4 text-(--muted) sm:flex-row sm:items-center sm:justify-between">
+      <div className="wrapper my-0! flex gap-4 pt-4 pb-6 text-(--muted) sm:flex-row sm:items-center sm:justify-between">
         <p className="txt">
           © {new Date().getFullYear()} Sizan Molla. All rights reserved.
         </p>
@@ -44,10 +44,11 @@ export default function Footer() {
                 <a
                   href={url}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="transition px-1.5 flex gap-1.5 items-center"
                 >
                   <Icon
-                    className={`hover:text-(--primary-hover) ${id === 4 ? "scale-118" : ""}`}
+                    className={`hover:text-(--primary) ${id === 4 ? "scale-118" : ""}`}
                   />
                 </a>
 
