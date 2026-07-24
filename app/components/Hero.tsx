@@ -22,8 +22,8 @@ export default function Hero() {
         </h2>
 
         <p className="mt-4 max-w-xl leading-7 text-(--muted)">
-          Based in <span className="highlighted-txt">Dhaka, Bangladesh</span>. I
-          specialize in building modern web applications with{" "}
+          Based in <span className="highlighted-txt">Gazipur, Bangladesh</span>.
+          I specialize in building modern web applications with{" "}
           <span className="font-mono highlighted-txt">Next.js</span> and{" "}
           <span className="font-mono highlighted-txt">Express.js</span>.
         </p>
@@ -40,22 +40,22 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="mt-6 flex gap-1.5 text-sm text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
+        <div className="flex gap-1.5 mt-6 text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
           <a
             href="https://github.com/sizan14789"
             target="_blank"
-            className="transition hover:text-(--foreground) flex gap-1.5 group"
+            className="transition hover:text-(--foreground) flex gap-1.5 group items-center"
           >
-            <RxGithubLogo className="text-base mt-0.5 group-hover:text-(--primary)" />
+            <RxGithubLogo className="group-hover:text-(--primary)" />
             <span className="tracking-wide">Github</span>
           </a>
           <span className="text-(--border)">|</span>
           <a
             href="https://github.com/sizan14789"
             target="_blank"
-            className="transition hover:text-(--foreground) flex gap-1 group "
+            className="transition hover:text-(--foreground) flex items-center gap-1.5 group "
           >
-            <FaLinkedin className="text-base mt-0.5 group-hover:text-(--primary)" />
+            <FaLinkedin className="group-hover:text-(--primary)" />
             <span className="tracking-wide">LinkedIn</span>
           </a>
         </div>

@@ -8,7 +8,6 @@ import Skills from "./components/Skills";
 export default function Home() {
   return (
     <>
-      {/* hidden for now */}
       <Hero />
       <Projects />
       <Skills />

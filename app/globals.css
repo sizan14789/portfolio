@@ -7,9 +7,9 @@
 /* Dark */
 :root {
   /* Backgrounds */
-  --background: #0d0b14;
-  --surface: #171421;
-  --surface-hover: #2d273d;
+  --background: #11101a;
+  --surface: #15131e;
+  --surface-hover: #252131;
 
   /* Text */
   --foreground: #f5f3ff;
@@ -18,7 +18,7 @@
   --muted-foreground: #766e85;
 
   /* Borders */
-  --border: #4c455c;
+  --border: #3c3749;
   --divider: #211c2d;
 
   /* Accent */
@@ -32,11 +32,11 @@
   --danger: #f87171;
 
   /* Shadow */
-  --shadow: rgba(0, 0, 0, 0.45);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .frappe {
-  background-color: #ffffff13;
+  background-color: #ffffff0e;
   pointer-events: none;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .wrapper {
-  @apply mx-auto w-full max-w-280 px-4 md:px-8 mb-16 md:mb-24;
+  @apply mx-auto w-full max-w-280 px-4 md:px-8 mb-20 md:mb-24;
 }
 
 .button-primary {
