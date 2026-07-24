@@ -100,9 +100,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <p className="mt-8 txt text-center md:text-start">
-        I can learn and adapt to new technologies fast.
-      </p>
 
       {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {Object.entries(skills).map(([category, technologies]) => (
