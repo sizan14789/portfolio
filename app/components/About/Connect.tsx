@@ -14,7 +14,7 @@ export default function Connect({ css }: { css: string }) {
         Let's Get In Touch
       </h2>
       <p className="txt mb-4">
-        I'm open to internships, part time job and freelance work.
+        I'm open to internships, part time job and freelance work opportunities.
       </p>
       <div className="flex mt-auto gap-4 items-center">
         <a
