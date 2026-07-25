@@ -41,7 +41,7 @@
 }
 
 .nav-blur {
-  mask: linear-gradient(black, black, transparent);
+  mask: linear-gradient(#000000, #000000, transparent);
   backdrop-filter: blur(10px);
 }
 
@@ -93,22 +93,14 @@ body {
   @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200;
 }
 
-.dim-bg-effect {
-  @apply bg-(--background) duration-200 hover:bg-(--surface-hover);
-}
-
 .section-subtitle {
   @apply mt-3 max-w-2xl text-(--muted) leading-7;
 }
 
 .nav-link {
-  @apply text-sm text-(--muted) transition
-    hover:text-(--foreground);
+  @apply text-sm font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer;
 }
 
 .tag {
-  @apply rounded-full border border-(--border)
-    bg-(--surface-hover)
-    px-3 py-1 text-xs font-medium
-    text-(--muted);
+  @apply rounded-full border border-(--border) bg-(--surface-hover) px-3 py-1 text-xs font-medium text-(--muted);
 }
