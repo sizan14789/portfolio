@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import projects from "@/data/projects.json";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./Projects/ProjectCard";
 
 export default function Projects() {
   return (

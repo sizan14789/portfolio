@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { RxGithubLogo } from "react-icons/rx";
+import { github_url, linkedin_url } from "@/data/sizan.json";
 
 export default function Hero() {
   const [frappe, setFrappe] = useState<Boolean>(false);
@@ -46,7 +47,7 @@ export default function Hero() {
 
         <div className="flex gap-1.5 mt-6 text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
           <a
-            href="https://github.com/sizan14789"
+            href={github_url}
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-(--foreground) flex gap-1.5 group items-center"
@@ -56,7 +57,7 @@ export default function Hero() {
           </a>
           <span className="text-(--border)">|</span>
           <a
-            href="https://github.com/sizan14789"
+            href={linkedin_url}
             target="_blank"
             rel="noopener noreferrer"
             className="transition hover:text-(--foreground) flex items-center gap-1.5 group "

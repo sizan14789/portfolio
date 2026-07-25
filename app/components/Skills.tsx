@@ -1,13 +1,13 @@
 import { FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import {
-  SiAgentskills,
   SiCplusplus,
   SiExpress,
   SiNextdotjs,
   SiPostgresql,
   SiTypescript,
 } from "react-icons/si";
+import SkillCard from "./Skills/SkillCard";
 
 export default function Skills() {
   const skillSet = [
@@ -61,18 +61,6 @@ export default function Skills() {
     },
   ];
 
-  //   const skills = {
-  //     Languages: ["C++", "Python", "Java", "JavaScript", "TypeScript"],
-
-  //     Frontend: ["React", "Next.js", "Tailwind CSS"],
-
-  //     Backend: ["Node.js", "Express.js"],
-
-  //     Databases: ["PostgreSQL", "MySQL"],
-
-  //     Tools: ["Git", "GitHub"],
-  //   };
-
   return (
     <section className="wrapper">
       <div className="mb-8">
@@ -83,47 +71,10 @@ export default function Skills() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-        {skillSet.map(({ name, category, icon: Icon, color }) => (
-          <div
-            key={name}
-            className="flex items-center gap-3 p-4 rounded-xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary) hover:bg-(--surface-hover) group"
-          >
-            <Icon className={`text-2xl ${color} mb-1`} />
-
-            <div>
-              <p className=" font-mono text-sm font-semibold tracking-wide text-(--foreground) group-hover:text-(--primary) duration-200">
-                {name}
-              </p>
-
-              <p className="text-xs! txt">{category}</p>
-            </div>
-          </div>
+        {skillSet?.map((elem) => (
+          <SkillCard skillDetails={elem} key={elem.name} />
         ))}
       </div>
-
-      {/* <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {Object.entries(skills).map(([category, technologies]) => (
-          <div
-            key={category}
-            className="rounded-xl border border-(--border) bg-(--surface) p-6"
-          >
-            <h3 className="font-mono font-semibold tracking-wide text-(--foreground)">
-              {category}
-            </h3>
-
-            <div className="mt-4 flex flex-wrap gap-2">
-              {technologies.map((technology) => (
-                <span
-                  key={technology}
-                  className="rounded-md bg-(--surface-hover) px-3 py-1.5 font-mono text-sm font-semibold text-(--muted)"
-                >
-                  {technology}
-                </span>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 }

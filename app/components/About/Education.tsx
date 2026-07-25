@@ -21,6 +21,8 @@ export default function Education({ css }: { css: string }) {
         </a>{" "}
         <br />
         2024 - {new Date().getFullYear() >= 2028 ? 2028 : "Present"}
+        {/* <br />
+        CGPA: 3.97/4.00 */}
       </p>
     </article>
   );

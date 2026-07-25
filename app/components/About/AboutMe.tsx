@@ -13,8 +13,9 @@ export default function AboutMe({ css }: { css: string }) {
       <p className="txt">
         I'm a {age}-year-old Computer Science student, currently living in{" "}
         <span className="highlighted-txt">Gazipur, Bangladesh</span>. I have a
-        good understanding of full-stack development, and a keen eye for problem
-        solving. I like learning cool technologies and building stuff.
+        good understanding of full-stack development, and a keen eye for{" "}
+        <span className="highlighted-txt"> problem solving.</span> I like
+        learning cool technologies and building stuff.
       </p>
     </article>
   );

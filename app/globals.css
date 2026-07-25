@@ -90,7 +90,7 @@ body {
 }
 
 .highlighted-txt {
-  @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200;
+  @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200 rounded-xs;
 }
 
 .section-subtitle {
