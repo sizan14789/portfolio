@@ -28,8 +28,8 @@
         "color": "text-[#67e8f9]"
       }
     ],
-    "liveUrl": "#",
-    "githubUrl": "#"
+    "liveUrl": "https://shopup-sizan.vercel.app",
+    "githubUrl": "https://github.com/sizan14789/shopup"
   },
   {
     "id": 2,
@@ -60,7 +60,7 @@
         "color": "text-[#f0abfc]"
       }
     ],
-    "liveUrl": "#",
-    "githubUrl": "#"
+    "liveUrl": "https://youthlink-delta.vercel.app/",
+    "githubUrl": "https://github.com/sizan14789/youthlink"
   }
 ]
