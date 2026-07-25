@@ -11,9 +11,9 @@ export default function Hero() {
       <div className={`fixed inset-0 frappe ${frappe ? "flex" : "hidden"}`} />
 
       <div className="flex flex-col flex-1 md:flex-1/4 text-center md:text-start items-center md:items-start">
-        <p className="text-base text-(--muted)">Hello, I&apos;m</p>
+        <p className="txt text-base!">Hello, I&apos;m</p>
 
-        <h1 className="mt-2 text-5xl font-bold text-(--foreground) sm:text-6xl lg:text-7xl">
+        <h1 className="mt-1.5 text-5xl font-bold text-(--foreground) sm:text-6xl lg:text-7xl">
           Sizan Molla
         </h1>
 
@@ -21,7 +21,7 @@ export default function Hero() {
           Full-Stack Developer
         </h2>
 
-        <p className="mt-4 max-w-xl leading-7 text-(--muted)">
+        <p className="mt-4 max-w-xl leading-7 txt text-base!">
           Based in <span className="highlighted-txt">Gazipur, Bangladesh</span>.
           I specialize in building modern web applications with{" "}
           <span className="font-mono highlighted-txt">Next.js</span> and{" "}

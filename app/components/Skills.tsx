@@ -88,14 +88,14 @@ export default function Skills() {
             key={name}
             className="flex items-center gap-3 p-4 rounded-xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary) hover:bg-(--surface-hover) group"
           >
-            <Icon className={`text-2xl ${color}`} />
+            <Icon className={`text-2xl ${color} mb-1`} />
 
             <div>
-              <p className="font-mono text-sm font-semibold tracking-wide text-(--foreground) group-hover:text-(--primary) duration-200">
+              <p className=" font-mono text-sm font-semibold tracking-wide text-(--foreground) group-hover:text-(--primary) duration-200">
                 {name}
               </p>
 
-              <p className="mt-0.5 text-xs text-(--muted)">{category}</p>
+              <p className="text-xs! txt">{category}</p>
             </div>
           </div>
         ))}

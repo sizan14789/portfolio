@@ -4,11 +4,11 @@
     scrollbar-gutter: stable;
   }
 }
-/* Dark */
+
 :root {
   /* Backgrounds */
   --background: #11101a;
-  --surface: #15131e;
+  --surface: #14121d;
   --surface-hover: #252131;
 
   /* Text */
@@ -36,7 +36,7 @@
 }
 
 .frappe {
-  background-color: #ffffff0e;
+  background: #bfaaff09;
   pointer-events: none;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .txt {
-  @apply text-sm text-(--muted) leading-7;
+  @apply text-sm text-(--muted) leading-7 font-semibold;
 }
 
 .wrapper {

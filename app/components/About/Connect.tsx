@@ -18,7 +18,7 @@ export default function Connect({ css }: { css: string }) {
       </p>
       <div className="flex mt-auto gap-4 items-center">
         <a
-          href="mailto:sizanalt@gmail.com"
+          href="mailto:sizanalt@gmail.com?subject=Portfolio%20Inquiry"
           className="button-primary rounded-md! flex-1"
         >
           Mail Me
