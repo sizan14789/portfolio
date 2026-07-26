@@ -12,7 +12,7 @@ export default function SkillCard({
 }) {
   const { name, color, icon: Icon, category } = skillDetails;
   return (
-    <div className="flex items-center gap-3 p-4 rounded-xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary) hover:bg-(--surface-hover) group">
+    <div className="flex items-center gap-3 p-4 card-border rounded-xl! hover:bg-(--surface-hover) group ">
       <Icon className={`text-2xl ${color} mb-1`} />
 
       <div>

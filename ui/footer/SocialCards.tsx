@@ -16,7 +16,7 @@ export default function SocialCard({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="text-(--muted) hover:text-(--foreground)"
+      className="text-(--muted) hover:text-(--foreground) duration-200"
       title={title}
     >
       <Icon className={`${scale}`} />
