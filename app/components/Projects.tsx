@@ -1,7 +1,6 @@
 "use client";
 
 import { Star } from "lucide-react";
-import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import projects from "@/data/projects.json";
 import ProjectCard from "./Projects/ProjectCard";
@@ -17,12 +16,15 @@ export default function Projects() {
           <Star className="text-(--primary)" />
           Featured Projects
         </h2>
-        <Link
-          href=""
-          className="gap-1 text-sm items-center mt-1 text-(--primary) hidden md:flex"
+        <a
+          href="https://github.com/sizan14789?tab=repositories"
+          className="gap-1 text-sm items-center mt-1 text-(--primary) hidden md:flex group"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          View All <FaArrowRight className="text-xs" />
-        </Link>
+          Repos{" "}
+          <FaArrowRight className="text-xs mt-1 group-hover:translate-x-1 duration-200" />
+        </a>
       </div>
       <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center">
         {projects?.map((elem) => {

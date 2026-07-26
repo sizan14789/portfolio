@@ -102,7 +102,7 @@ body {
 }
 
 .nav-link {
-  @apply text-sm font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer;
+  @apply text-sm font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer active:scale-95;
 }
 
 .tag {

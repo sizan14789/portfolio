@@ -17,18 +17,21 @@ export default function Footer() {
     url: string;
     icon: IconType;
     scale: string;
+    title: string;
   }[] = [
     {
       id: 1,
       url: github_url,
       icon: FiGithub,
       scale: "scale-90",
+      title: "Github",
     },
     {
       id: 2,
       url: linkedin_url,
       icon: PiLinkedinLogoBold,
       scale: "scale-100",
+      title: "LinkedIn",
     },
 
     {
@@ -36,12 +39,14 @@ export default function Footer() {
       url: fiverr_url,
       icon: TbBrandFiverr,
       scale: "scale-100",
+      title: "Fiverr",
     },
     {
       id: 4,
       url: fb_url,
       icon: AiOutlineFacebook,
       scale: "scale-110",
+      title: "Facebook",
     },
   ];
 

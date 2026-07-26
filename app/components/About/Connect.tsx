@@ -26,6 +26,7 @@ export default function Connect({ css }: { css: string }) {
           target="blank"
           rel="noopener noreferrer"
           className="text-4xl text-(--muted) hover:text-(--primary) duration-200"
+          title="Fiverr"
         >
           <RiFiverrFill />
         </a>
