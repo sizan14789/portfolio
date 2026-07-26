@@ -5,6 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 import projects from "@/data/projects.json";
 import ProjectCard from "./Projects/ProjectCard";
 import { getContext } from "@/context/AppContext";
+import { github_url } from "@/data/sizan.json";
 
 export default function Projects() {
   const { projectRef } = getContext();
@@ -17,7 +18,7 @@ export default function Projects() {
           Featured Projects
         </h2>
         <a
-          href="https://github.com/sizan14789?tab=repositories"
+          href={github_url + "?tab=repositories"}
           className="gap-1 text-sm items-center mt-1 text-(--primary) hidden md:flex group text-semibold"
           target="_blank"
           rel="noopener noreferrer"
