@@ -14,8 +14,7 @@ This portfolio is a place to showcase the projects I've built, the technologies 
 
 ## Links
 
-- [Live Portfolio]()
-- [LinkedIn]()
+- [Live Portfolio](https://sizan-dev.vercel.app/)
 - [Facebook](https://www.facebook.com/sizan14789)
 
 ## A Note
