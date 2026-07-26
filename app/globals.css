@@ -31,6 +31,9 @@
   --warning: #fbbf24;
   --danger: #f87171;
 
+  /* Tags */
+  --tag-bg: #252131;
+
   /* Shadow */
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
@@ -60,6 +63,9 @@
   --success: #3f9d63;
   --warning: #c18b24;
   --danger: #d05f6d;
+
+  /* Tags */
+  --tag-bg: #7e7696;
 
   /* Shadow */
   --shadow: 0 2px 8px rgba(73, 57, 105, 0.06);
@@ -208,18 +214,18 @@ body {
   @apply rounded-2xl border border-(--border) bg-(--surface) duration-200 hover:border-(--primary) shadow-(--shadow);
 }
 
-.highlighted-txt {
-  @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200 rounded-xs;
+.tech-tag {
+  @apply rounded-md bg-(--tag-bg) px-2.5 py-1 font-mono text-xs font-bold;
 }
 
-.section-subtitle {
-  @apply mt-3 max-w-2xl text-(--muted) leading-7;
+.highlighted-txt {
+  @apply font-bold text-(--foreground-lighter) hover:bg-(--primary) hover:text-(--background) duration-200 rounded-xs;
 }
 
 .nav-link {
   @apply text-sm font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer active:scale-95;
 }
 
-.tag {
-  @apply rounded-full border border-(--border) bg-(--surface-hover) px-3 py-1 text-xs font-medium text-(--muted);
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-(--muted) leading-7;
 }

@@ -64,10 +64,7 @@ export default function ProjectCard({
           <Tag size={16} className="mt-1" />
           {technologies?.map(({ id, name, color }) => {
             return (
-              <span
-                className={`rounded-md bg-(--surface-hover) px-2.5 py-1 font-mono text-xs font-bold ${color}`}
-                key={id}
-              >
+              <span className={`tech-tag ${color}`} key={id}>
                 {name}
               </span>
             );
