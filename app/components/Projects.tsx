@@ -18,7 +18,7 @@ export default function Projects() {
         </h2>
         <a
           href="https://github.com/sizan14789?tab=repositories"
-          className="gap-1 text-sm items-center mt-1 text-(--primary) hidden md:flex group"
+          className="gap-1 text-sm items-center mt-1 text-(--primary) hidden md:flex group text-semibold"
           target="_blank"
           rel="noopener noreferrer"
         >
