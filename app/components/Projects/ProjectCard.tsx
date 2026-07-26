@@ -1,6 +1,6 @@
-import { Tag } from "lucide-react";
+import { MoveUpRight, Play, Tag } from "lucide-react";
 import Image from "next/image";
-import { RxGithubLogo } from "react-icons/rx";
+import { RxArrowTopRight, RxGithubLogo } from "react-icons/rx";
 
 export default function ProjectCard({
   projectDetail,
@@ -40,7 +40,7 @@ export default function ProjectCard({
             src={image}
             alt={imageAlt}
             fill
-            className="object-cover duration-200 brightness-90 group-hover:brightness-100 group-hover:scale-105 "
+            className="object-cover duration-200 brightness-95 group-hover:brightness-100 group-hover:scale-105 "
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             loading="eager"
           />
@@ -64,30 +64,32 @@ export default function ProjectCard({
           <Tag size={16} className="mt-1" />
           {technologies?.map(({ id, name, color }) => {
             return (
-              <span
-                className={`rounded-md bg-(--surface-hover) px-2.5 py-1 font-mono text-xs font-bold ${color}`}
-                key={id}
-              >
+              <span className={`tech-tag ${color}`} key={id}>
                 {name}
               </span>
             );
           })}
         </div>
 
-        <div className="mt-6 flex items-center gap-2 text-sm">
+        <div className="mt-6 flex items-center gap-3 font-mono">
           <a
             href={liveUrl}
-            rel="noopener noreferrer"
             target="_blank"
-            className="flex items-center gap-1.5 text-(--muted) hover:text-(--primary) font-semibold"
+            rel="noopener noreferrer"
+            className="rounded-full text-(--muted) flex gap-1.5 items-center hover:text-(--foreground) group/live"
           >
-            Live Demo
+            Live
+            <MoveUpRight
+              size={16}
+              strokeWidth={3}
+              className="mt-px group-hover/live:translate-x-0.5 group-hover/live:-translate-y-0.5 duration-200"
+            />
           </a>
-          <span className="text-(--border)">|</span>
+          <span className="text-sm text-(--muted)">|</span>
           <a
             href={githubUrl}
-            rel="noopener noreferrer"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-(--muted) hover:text-(--foreground)"
           >
             <RxGithubLogo />

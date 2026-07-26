@@ -20,13 +20,13 @@ export default function Skills() {
       name: "Next.js",
       category: "Frontend",
       icon: SiNextdotjs,
-      color: "text-[#f5f3ff]",
+      color: "text-(-foreground)",
     },
     {
       name: "Express.js",
       category: "Backend",
       icon: SiExpress,
-      color: "text-[#f5f3ff]",
+      color: "text-(-foreground)",
     },
     {
       name: "PostgreSQL",
@@ -62,7 +62,7 @@ export default function Skills() {
       name: "GitHub",
       category: "Tools",
       icon: FaGithub,
-      color: "text-[#f5f3ff]",
+      color: "text-(-foreground)",
     },
   ];
 

@@ -16,10 +16,10 @@ export default function SocialCard({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="px-2 flex gap-1.5 items-center"
+      className="text-(--muted) hover:text-(--foreground) duration-200"
       title={title}
     >
-      <Icon className={`hover:text-(--primary) ${scale}`} />
+      <Icon className={`${scale}`} />
     </a>
   );
 }

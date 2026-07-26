@@ -25,7 +25,7 @@ export default function Connect({ css }: { css: string }) {
           href={fiverr_url}
           target="blank"
           rel="noopener noreferrer"
-          className="text-4xl text-(--muted) hover:text-(--primary) duration-200"
+          className="text-[40px] text-(--muted) hover:text-(--primary-hover) duration-200 "
           title="Fiverr"
         >
           <RiFiverrFill />

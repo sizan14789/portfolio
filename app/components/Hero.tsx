@@ -1,14 +1,12 @@
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
-import { RxGithubLogo } from "react-icons/rx";
-import { github_url, linkedin_url } from "@/data/sizan.json";
 import HeroCta from "./Hero/HeroCta";
+import HeroLinks from "./Hero/HeroLinks";
 
 export default function Hero() {
   return (
     <section className="wrapper flex gap-8 items-center flex-col-reverse md:flex-row ">
       <div className="flex flex-col flex-1 md:flex-1/4 text-center md:text-start items-center md:items-start">
-        <p className="txt text-base!">Hello, I&apos;m</p>
+        <p className="txt sm:text-base!">Hello, I&apos;m</p>
 
         <h1 className="mt-1.5 text-5xl font-bold text-(--foreground) sm:text-6xl lg:text-7xl">
           Sizan Molla
@@ -18,7 +16,7 @@ export default function Hero() {
           Full-Stack Developer
         </h2>
 
-        <p className="mt-4 max-w-xl leading-7 txt text-base!">
+        <p className="mt-4 max-w-xl leading-7 txt sm:text-base!">
           Based in <span className="highlighted-txt">Gazipur, Bangladesh</span>.
           I specialize in building modern web applications with{" "}
           <span className="font-mono highlighted-txt">Next.js</span> and{" "}
@@ -27,27 +25,7 @@ export default function Hero() {
 
         <HeroCta />
 
-        <div className="flex gap-1.5 mt-6 text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
-          <a
-            href={github_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition hover:text-(--foreground) flex gap-1.5 group items-center"
-          >
-            <RxGithubLogo className="group-hover:text-(--primary)" />
-            <span className="tracking-wide">Github</span>
-          </a>
-          <span className="text-(--border)">|</span>
-          <a
-            href={linkedin_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition hover:text-(--foreground) flex items-center gap-1.5 group "
-          >
-            <FaLinkedin className="group-hover:text-(--primary)" />
-            <span className="tracking-wide">LinkedIn</span>
-          </a>
-        </div>
+        <HeroLinks />
       </div>
       <div className="md:flex-1 flex justify-center items-center">
         <figure className="rounded-full overflow-hidden min-w-44 max-w-52 sm:max-w-56 md:max-w-70 lg:max-w-80 aspect-square border border-(--border) flex justify-center">
