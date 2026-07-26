@@ -1,6 +1,6 @@
-import { Tag } from "lucide-react";
+import { MoveUpRight, Play, Tag } from "lucide-react";
 import Image from "next/image";
-import { RxGithubLogo } from "react-icons/rx";
+import { RxArrowTopRight, RxGithubLogo } from "react-icons/rx";
 
 export default function ProjectCard({
   projectDetail,
@@ -74,20 +74,25 @@ export default function ProjectCard({
           })}
         </div>
 
-        <div className="mt-6 flex items-center gap-2 text-sm">
+        <div className="mt-6 flex items-center gap-3 font-mono">
           <a
             href={liveUrl}
-            rel="noopener noreferrer"
             target="_blank"
-            className="flex items-center gap-1.5 text-(--muted) hover:text-(--primary) font-semibold"
+            rel="noopener noreferrer"
+            className="rounded-full text-(--muted) flex gap-1.5 items-center hover:text-(--foreground) group/live"
           >
-            Live Demo
+            Live
+            <MoveUpRight
+              size={16}
+              strokeWidth={3}
+              className="mt-px group-hover/live:translate-x-0.5 group-hover/live:-translate-y-0.5 duration-200"
+            />
           </a>
-          <span className="text-(--border)">|</span>
+          <span className="text-sm text-(--muted)">|</span>
           <a
             href={githubUrl}
-            rel="noopener noreferrer"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-(--muted) hover:text-(--foreground)"
           >
             <RxGithubLogo />
