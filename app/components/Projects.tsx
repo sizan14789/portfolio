@@ -1,12 +1,17 @@
+"use client";
+
 import { Star } from "lucide-react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import projects from "@/data/projects.json";
 import ProjectCard from "./Projects/ProjectCard";
+import { getContext } from "@/context/AppContext";
 
 export default function Projects() {
+  const { projectRef } = getContext();
+
   return (
-    <section className="wrapper">
+    <section className="wrapper" ref={projectRef}>
       <div className="flex justify-between items-center mb-6 md:mb-8">
         <h2 className="section-title">
           <Star className="text-(--primary)" />
