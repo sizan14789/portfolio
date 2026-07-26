@@ -33,32 +33,27 @@ export default function Header() {
   };
 
   return (
-    <>
-      <div
-        className={`fixed inset-0 min-h-svh z-20 frappe ${frappe ? "flex" : "hidden"}`}
-      />
-      <header className="nav-blur mb-16 md:mb-24 sticky top-0 left-0">
-        <div className="wrapper mb-0! flex items-center justify-between pt-5 pb-10 z-10">
-          <h2
-            className="text-2xl font-bold font-mono tracking-widest text-(--primary)"
-            onClick={() => setFrappe((prev) => !prev)}
-          >
-            Sizan
-          </h2>
+    <header className="nav-blur mb-16 md:mb-24 sticky top-0 left-0">
+      <div className="wrapper mb-0! flex items-center justify-between pt-5 pb-10 z-10">
+        <h2
+          className="text-2xl font-bold font-mono tracking-widest text-(--primary)"
+          onClick={() => setFrappe((prev) => !prev)}
+        >
+          Sizan
+        </h2>
 
-          <nav className="flex gap-6">
-            {navLinks?.map(({ id, name, ref }) => (
-              <button
-                className="nav-link"
-                key={id}
-                onClick={() => handleNavigation(ref.current)}
-              >
-                {name}
-              </button>
-            ))}
-          </nav>
-        </div>
-      </header>
-    </>
+        <nav className="flex gap-6">
+          {navLinks?.map(({ id, name, ref }) => (
+            <button
+              className="nav-link"
+              key={id}
+              onClick={() => handleNavigation(ref.current)}
+            >
+              {name}
+            </button>
+          ))}
+        </nav>
+      </div>
+    </header>
   );
 }

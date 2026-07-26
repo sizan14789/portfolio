@@ -40,7 +40,7 @@ export default function ProjectCard({
             src={image}
             alt={imageAlt}
             fill
-            className="object-cover duration-200 brightness-90 group-hover:brightness-100 group-hover:scale-105 "
+            className="object-cover duration-200 brightness-95 group-hover:brightness-100 group-hover:scale-105 "
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             loading="eager"
           />
