@@ -127,7 +127,7 @@ body {
   @apply flex h-12 w-38 md:h-12 md:w-42 items-center justify-center rounded-full text-sm
     bg-(--primary) text-(--primary-foreground)
     font-bold tracking-wide duration-200 cursor-pointer
-    hover:bg-(--primary-hover)
+    hover:bg-(--primary-hover) 
     active:scale-95;
 }
 
