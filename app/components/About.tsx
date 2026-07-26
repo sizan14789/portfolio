@@ -7,10 +7,10 @@ import Experience from "./About/Experience";
 import { getContext } from "@/context/AppContext";
 
 export default function About() {
-  const { aboutRef } = getContext();
+  const { connectRef } = getContext();
 
   return (
-    <section className="wrapper flex gap-6 flex-col leading-6" ref={aboutRef}>
+    <section className="wrapper flex gap-6 flex-col leading-6" ref={connectRef}>
       <div className="flex-1 flex gap-6 flex-col sm:flex-row">
         <AboutMe css="" />
 

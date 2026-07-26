@@ -1,3 +1,5 @@
+"use client";
+
 import { FaGitAlt, FaGithub, FaPython } from "react-icons/fa";
 import { GrTechnology } from "react-icons/gr";
 import {
@@ -8,8 +10,11 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import SkillCard from "./Skills/SkillCard";
+import { getContext } from "@/context/AppContext";
 
 export default function Skills() {
+  const { skillsRef } = getContext();
+
   const skillSet = [
     {
       name: "Next.js",
@@ -62,7 +67,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="wrapper">
+    <section className="wrapper" ref={skillsRef}>
       <div className="mb-8">
         <h2 className="section-title">
           <GrTechnology className="text-(--primary)" />

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa";
 import { RxGithubLogo } from "react-icons/rx";
 import { github_url, linkedin_url } from "@/data/sizan.json";
+import HeroCta from "./Hero/HeroCta";
 
 export default function Hero() {
   return (
@@ -24,16 +25,7 @@ export default function Hero() {
           <span className="font-mono highlighted-txt">Express.js</span>.
         </p>
 
-        <div className="mt-6 flex gap-4 justify-center md:justify-start">
-          <button className="button-primary ">Projects</button>
-          <a
-            href="/assets/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <button className="button-secondary">Resume</button>
-          </a>
-        </div>
+        <HeroCta />
 
         <div className="flex gap-1.5 mt-6 text-(--muted) justify-center md:justify-start pl-4 md:pl-0 font-mono">
           <a

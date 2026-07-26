@@ -1,28 +1,35 @@
 "use client";
 
+import { getContext } from "@/context/AppContext";
 import { useState } from "react";
 
 export default function Header() {
   const [frappe, setFrappe] = useState<Boolean>(false);
+  const { projectRef, skillsRef, connectRef } = getContext();
 
   const navLinks = [
     {
       id: 1,
       name: "Projects",
+      ref: projectRef,
     },
     {
       id: 2,
       name: "Skills",
+      ref: skillsRef,
     },
     {
       id: 3,
       name: "Contact",
+      ref: connectRef,
     },
   ];
 
-  const handleNavigation = (name: string) => {
-    if ((name = "Projects")) {
-    }
+  const handleNavigation = (refElem: HTMLElement) => {
+    console.log(refElem);
+    refElem?.scrollIntoView({
+      behavior: "smooth",
+    });
   };
 
   return (
@@ -40,11 +47,11 @@ export default function Header() {
           </h2>
 
           <nav className="flex gap-6">
-            {navLinks?.map(({ id, name }) => (
+            {navLinks?.map(({ id, name, ref }) => (
               <button
                 className="nav-link"
                 key={id}
-                onClick={() => handleNavigation(name)}
+                onClick={() => handleNavigation(ref.current)}
               >
                 {name}
               </button>
