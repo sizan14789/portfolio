@@ -52,12 +52,12 @@ export default function Footer() {
 
   return (
     <footer className="mt-auto border-t border-(--divider)">
-      <div className="wrapper my-0! py-2 flex flex-col-reverse md:flex-row items-center  justify-center md:justify-between">
-        <p className="text-xs text-(--muted) font-semibold">
+      <div className="wrapper my-0! py-2 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between">
+        <p className="text-xs md:text-sm text-(--muted) font-semibold">
           © {new Date().getFullYear()} Sizan Molla. All rights reserved.
         </p>
 
-        <div className="flex text-(--muted) justify-center items-center py-4 font-mono text-2xl">
+        <div className="flex justify-center items-center py-4 text-2xl gap-4">
           {socialLinks?.map((elem) => {
             return <SocialCard socialDetail={elem} key={elem.id} />;
           })}
