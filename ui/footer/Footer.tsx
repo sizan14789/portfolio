@@ -12,7 +12,8 @@ import {
 } from "@/data/sizan.json";
 import { IconType } from "react-icons";
 import SocialCard from "./SocialCards";
-import { Eclipse } from "lucide-react";
+import { useState } from "react";
+import Credits from "./Credits";
 
 export default function Footer() {
   const socialLinks: {
@@ -53,28 +54,32 @@ export default function Footer() {
     },
   ];
 
+  const [mode, setMode] = useState("Dark");
+
   const handleThemeToggle = () => {
     document.documentElement.classList.toggle("light");
+    setMode((prev) => (prev === "Dark" ? "Light" : "Dark"));
   };
 
   return (
-    <footer className="mt-auto border-t border-(--divider)">
-      <div className="wrapper my-0! py-2 flex flex-col-reverse md:flex-row items-center justify-center ">
-        <p className="text-xs md:text-sm text-(--muted) font-semibold">
-          © {new Date().getFullYear()} Sizan Molla. All rights reserved.
-        </p>
-        <Eclipse
-          size={18}
-          strokeWidth={1.5}
-          className="ml-3 mt-0.5 text-(--muted)! hover:text-(--primary-hover)! active:scale-90"
+    <footer className="mt-auto border-t border-(--divider) pt-2">
+      <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
+        <Credits css="hidden md:flex" />
+
+        <div
+          className="text-xs md:text-sm text-(--primary) font-semibold md:ml-4 cursor-pointer"
           onClick={handleThemeToggle}
-        />
+        >
+          <p>{mode}</p>
+        </div>
 
         <div className="flex justify-center items-center py-4 text-2xl gap-4 md:ml-auto">
           {socialLinks?.map((elem) => {
             return <SocialCard socialDetail={elem} key={elem.id} />;
           })}
         </div>
+
+        <Credits css="md:hidden" />
       </div>
     </footer>
   );

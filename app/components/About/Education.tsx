@@ -15,7 +15,7 @@ export default function Education({ css }: { css: string }) {
           target="_blank"
           rel="noopener noreferrer"
           href={university.url}
-          className="highlighted-txt"
+          className="highlighted-txt links"
           title="Located at Savar, Dhaka, Bangladesh"
         >
           {university.name}

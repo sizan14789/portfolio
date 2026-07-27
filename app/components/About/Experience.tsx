@@ -15,7 +15,7 @@ export default function Experience({ css }: { css: string }) {
           target="_blank"
           rel="noopener noreferrer"
           href={club.url}
-          className="highlighted-txt"
+          className="highlighted-txt links"
         >
           Competitive Programming Club
         </a>{" "}
@@ -24,7 +24,7 @@ export default function Experience({ css }: { css: string }) {
           target="_blank"
           rel="noopener noreferrer"
           href={club.url + "jobpipeline"}
-          className="highlighted-txt"
+          className="highlighted-txt links"
         >
           Job Pipeline
         </a>{" "}
