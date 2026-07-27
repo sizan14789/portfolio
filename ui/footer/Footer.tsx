@@ -64,7 +64,7 @@ export default function Footer() {
     <footer className="mt-auto border-t border-(--divider) pt-2">
       <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
         <p className="text-xs md:text-sm text-(--muted) font-semibold hidden md:flex">
-          © {new Date().getFullYear()} Sizan Molla. All rights reserved.
+          © {new Date().getFullYear()} Sizan Molla.
         </p>
 
         <div
