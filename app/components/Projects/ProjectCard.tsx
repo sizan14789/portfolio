@@ -34,7 +34,7 @@ export default function ProjectCard({
 
   return (
     <article className="group flex-1 overflow-hidden max-w-140 card-border shadow-(--shadow)">
-      <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-12 flex justify-center items-center">
+      <div className="aspect-16/10 overflow-hidden bg-(--surface-hover) p-8 md:p-12 flex justify-center items-center">
         <figure className="relative rounded-2xl overflow-hidden w-full h-full border border-(--white)">
           <Image
             src={image}
