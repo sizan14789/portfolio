@@ -64,7 +64,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto border-t border-(--divider) pt-2">
       <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
-        <Credits />
+        <Credits css="hidden md:flex" />
 
         <div
           className="text-xs md:text-sm text-(--primary) font-semibold md:ml-4 cursor-pointer"
@@ -79,7 +79,7 @@ export default function Footer() {
           })}
         </div>
 
-        <Credits />
+        <Credits css="md:hidden" />
       </div>
     </footer>
   );
