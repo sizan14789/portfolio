@@ -13,6 +13,7 @@ import {
 import { IconType } from "react-icons";
 import SocialCard from "./SocialCards";
 import { useState } from "react";
+import Credits from "./Credits";
 
 export default function Footer() {
   const socialLinks: {
@@ -63,9 +64,7 @@ export default function Footer() {
   return (
     <footer className="mt-auto border-t border-(--divider) pt-2">
       <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
-        <p className="text-xs md:text-sm text-(--muted) font-semibold hidden md:flex">
-          © {new Date().getFullYear()} Sizan Molla.
-        </p>
+        <Credits />
 
         <div
           className="text-xs md:text-sm text-(--primary) font-semibold md:ml-4 cursor-pointer"
@@ -80,9 +79,7 @@ export default function Footer() {
           })}
         </div>
 
-        <p className="text-xs md:text-sm text-(--muted) font-semibold md:hidden">
-          © {new Date().getFullYear()} Sizan Molla. All rights reserved.
-        </p>
+        <Credits />
       </div>
     </footer>
   );
