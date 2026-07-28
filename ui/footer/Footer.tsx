@@ -14,7 +14,7 @@ import { IconType } from "react-icons";
 import SocialCard from "./SocialCards";
 import Credits from "./Credits";
 import Theme from "./Theme";
-import { Copy } from "lucide-react";
+import FooterMail from "./FooterMail";
 
 export default function Footer() {
   const socialLinks: {
@@ -62,13 +62,7 @@ export default function Footer() {
 
         <Theme />
 
-        <div className="txt flex gap-2 items-center">
-          <h3>sizanalt@gmail.com</h3>
-          <Copy
-            size={14}
-            className="mt-px cursor-pointer hover:scale-110 hover:text-(--foreground) duration-150"
-          />
-        </div>
+        <FooterMail />
 
         <div className="flex justify-center items-center text-2xl gap-4">
           {socialLinks?.map((elem) => {
