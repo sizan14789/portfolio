@@ -1,10 +1,10 @@
 "use client";
 
+import { getContext } from "@/context/AppContext";
 import AboutMe from "./About/AboutMe";
 import Connect from "./About/Connect";
 import Education from "./About/Education";
 import Experience from "./About/Experience";
-import { getContext } from "@/context/AppContext";
 
 export default function About() {
   const { connectRef } = getContext();

@@ -16,6 +16,7 @@ export default function Experience({ css }: { css: string }) {
           rel="noopener noreferrer"
           href={club.url}
           className="highlighted-txt links"
+          title="CPCCU"
         >
           Competitive Programming Club
         </a>{" "}
@@ -25,6 +26,7 @@ export default function Experience({ css }: { css: string }) {
           rel="noopener noreferrer"
           href={club.url + "jobpipeline"}
           className="highlighted-txt links"
+          title="Job Pipeline, CPCCU"
         >
           Job Pipeline
         </a>{" "}
