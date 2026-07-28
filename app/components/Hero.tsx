@@ -19,8 +19,14 @@ export default function Hero() {
         <p className="mt-4 max-w-xl leading-7 txt sm:text-base!">
           Based in <span className="highlighted-txt">Gazipur, Bangladesh</span>.
           I specialize in building modern web applications with{" "}
-          <span className="font-mono highlighted-txt">Next.js</span> and{" "}
-          <span className="font-mono highlighted-txt">Express.js</span>.
+          <span className="font-mono highlighted-txt" title="Frontend">
+            Next.js
+          </span>{" "}
+          and{" "}
+          <span className="font-mono highlighted-txt" title="Backend">
+            Express.js
+          </span>
+          .
         </p>
 
         <HeroCta />

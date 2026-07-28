@@ -1,10 +1,8 @@
 "use client";
 
 import { getContext } from "@/context/AppContext";
-import { useState } from "react";
 
 export default function Header() {
-  const [frappe, setFrappe] = useState<Boolean>(false);
   const { projectRef, skillsRef, connectRef } = getContext();
 
   const navLinks = [
@@ -26,7 +24,6 @@ export default function Header() {
   ];
 
   const handleNavigation = (refElem: HTMLElement) => {
-    console.log(refElem);
     refElem?.scrollIntoView({
       behavior: "smooth",
     });
@@ -35,10 +32,7 @@ export default function Header() {
   return (
     <header className="nav-blur mb-16 md:mb-24 sticky top-0 left-0">
       <div className="wrapper mb-0! flex items-center justify-between pt-5 pb-10 z-10">
-        <h2
-          className="text-2xl font-bold font-mono tracking-widest text-(--primary)"
-          onClick={() => setFrappe((prev) => !prev)}
-        >
+        <h2 className="text-2xl font-bold font-mono tracking-widest text-(--primary)">
           Sizan
         </h2>
 

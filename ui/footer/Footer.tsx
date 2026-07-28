@@ -1,5 +1,3 @@
-"use client";
-
 import { AiOutlineFacebook } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { PiLinkedinLogoBold } from "react-icons/pi";

@@ -234,7 +234,7 @@ body {
   }
 
   &:hover::before {
-    @apply w-1/2 -translate-x-[100%];
+    @apply w-1/2 -translate-x-full;
   }
 
   &:hover::after {

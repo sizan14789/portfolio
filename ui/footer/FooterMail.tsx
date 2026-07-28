@@ -1,3 +1,5 @@
+"use client";
+
 import { mail } from "@/data/sizan.json";
 
 import { ClipboardCheck, Copy } from "lucide-react";
