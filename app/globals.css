@@ -244,6 +244,10 @@ body {
   @apply text-sm relative font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer active:scale-95;
 }
 
+.theme-toggle-glass {
+  background: rgba(127, 127, 127, 0.498);
+}
+
 .section-subtitle {
   @apply mt-3 max-w-2xl text-(--muted) leading-7;
 }

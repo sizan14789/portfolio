@@ -12,8 +12,8 @@ import {
 } from "@/data/sizan.json";
 import { IconType } from "react-icons";
 import SocialCard from "./SocialCards";
-import { useState } from "react";
 import Credits from "./Credits";
+import Theme from "./Theme";
 
 export default function Footer() {
   const socialLinks: {
@@ -54,24 +54,12 @@ export default function Footer() {
     },
   ];
 
-  const [mode, setMode] = useState("Dark");
-
-  const handleThemeToggle = () => {
-    document.documentElement.classList.toggle("light");
-    setMode((prev) => (prev === "Dark" ? "Light" : "Dark"));
-  };
-
   return (
     <footer className="mt-auto border-t border-(--divider) pt-2">
       <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
         <Credits css="hidden md:flex" />
 
-        <div
-          className="text-xs md:text-sm text-(--primary) font-semibold md:ml-4 cursor-pointer"
-          onClick={handleThemeToggle}
-        >
-          <p>{mode}</p>
-        </div>
+        <Theme />
 
         <div className="flex justify-center items-center py-4 text-2xl gap-4 md:ml-auto">
           {socialLinks?.map((elem) => {
