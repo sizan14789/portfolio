@@ -14,6 +14,7 @@ import { IconType } from "react-icons";
 import SocialCard from "./SocialCards";
 import Credits from "./Credits";
 import Theme from "./Theme";
+import { Copy } from "lucide-react";
 
 export default function Footer() {
   const socialLinks: {
@@ -55,13 +56,21 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="mt-auto border-t border-(--divider) pt-2">
-      <div className="wrapper my-0! py-2 flex flex-col items-center justify-center md:flex-row ">
+    <footer className="mt-auto border-t border-(--divider) p-2 pt-4">
+      <div className="wrapper my-0! py-2 flex flex-col items-center md:justify-between md:flex-row md:gap-10 gap-4">
         <Credits css="hidden md:flex" />
 
         <Theme />
 
-        <div className="flex justify-center items-center py-4 text-2xl gap-4 md:ml-auto">
+        <div className="txt flex gap-2 items-center">
+          <h3>sizanalt@gmail.com</h3>
+          <Copy
+            size={14}
+            className="mt-px cursor-pointer hover:scale-110 hover:text-(--foreground) duration-150"
+          />
+        </div>
+
+        <div className="flex justify-center items-center text-2xl gap-4">
           {socialLinks?.map((elem) => {
             return <SocialCard socialDetail={elem} key={elem.id} />;
           })}

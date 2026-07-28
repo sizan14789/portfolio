@@ -15,7 +15,7 @@ export default function Theme() {
     themeDispatch(button);
   };
   return (
-    <div className="cursor-pointer flex rounded-4xl border border-(--border) relative h-6.5 md:h-7.5 text-xs md:text-sm text-(--primary) font-semibold md:ml-4 gap-4 ">
+    <div className="cursor-pointer flex rounded-4xl border border-(--border) relative h-6.5 md:h-7.5 text-xs md:text-sm text-(--primary) font-semibold gap-4">
       <p
         className="w-8.5 md:w-11 rounded-l-4xl flex items-center justify-end"
         onClick={() => handleThemeToggle("light")}
