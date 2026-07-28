@@ -227,7 +227,26 @@ body {
 }
 
 .nav-link {
-  @apply text-sm font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer active:scale-95;
+  &::before,
+  &::after {
+    content: "";
+    @apply block h-0.5 w-0 absolute -bottom-1 left-[50%] bg-(--primary) z-50 duration-200;
+  }
+
+  &:hover::before {
+    @apply w-1/2 -translate-x-[100%];
+  }
+
+  &:hover::after {
+    @apply w-1/2;
+  }
+
+  @apply text-sm relative font-semibold text-(--muted) hover:text-(--foreground) duration-200 cursor-pointer active:scale-95;
+}
+
+.theme-toggle-glass {
+  background: rgba(126, 126, 126, 0.347);
+  backdrop-filter: blur(0.5px);
 }
 
 .section-subtitle {
