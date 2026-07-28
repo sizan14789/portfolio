@@ -15,9 +15,9 @@ export default function Theme() {
     themeDispatch(button);
   };
   return (
-    <div className="cursor-pointer flex rounded-4xl border border-(--border) relative h-6.5 md:h-7.5 text-xs md:text-sm text-(--primary) font-semibold md:ml-4 gap-4 md:gap-5">
+    <div className="cursor-pointer flex rounded-4xl border border-(--border) relative h-6.5 md:h-7.5 text-xs md:text-sm text-(--primary) font-semibold md:ml-4 gap-4 ">
       <p
-        className="w-9 md:w-11 rounded-l-4xl flex items-center justify-end"
+        className="w-8.5 md:w-11 rounded-l-4xl flex items-center justify-end"
         onClick={() => handleThemeToggle("light")}
       >
         Light
@@ -29,7 +29,7 @@ export default function Theme() {
         Dark
       </p>
       <p
-        className={`w-10.75 md:w-13 h-6.25 md:h-7.25 rounded-4xl absolute top-0 left-0 z-999 duration-250 scale-99 ease-in-out theme-toggle-glass ${theme === "dark" ? "translate-x-full" : ""}`}
+        className={`w-10.5 md:w-12.5 h-6.25 md:h-7.25 rounded-4xl absolute top-0 left-0 z-999 duration-250 scale-99 ease-in-out theme-toggle-glass ${theme === "dark" ? "translate-x-full" : ""}`}
       ></p>
     </div>
   );

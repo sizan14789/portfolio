@@ -245,7 +245,8 @@ body {
 }
 
 .theme-toggle-glass {
-  background: rgba(127, 127, 127, 0.498);
+  background: rgba(126, 126, 126, 0.347);
+  backdrop-filter: blur(0.5px);
 }
 
 .section-subtitle {
