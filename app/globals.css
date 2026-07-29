@@ -38,6 +38,8 @@
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+/* ----------------------THEMES------------------------- */
+
 .light {
   /* Backgrounds */
   --background: #f5f3fa;
@@ -161,6 +163,8 @@
   --shadow: 0 4px 14px rgba(0, 0, 0, 0.32);
 }
 
+/* ----------------------CUSTOM------------------------- */
+
 section {
   scroll-margin-top: 6rem;
 }
@@ -180,6 +184,8 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+/* ----------------------PRESETS------------------------- */
 
 .txt {
   @apply text-sm text-(--muted) leading-7 font-semibold;
