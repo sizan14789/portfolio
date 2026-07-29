@@ -1,6 +1,6 @@
 import { Signature } from "lucide-react";
-import { RiFiverrFill } from "react-icons/ri";
-import { fiverr_url, mail } from "@/data/sizan.json";
+import { linkedin_url, mail } from "@/data/sizan.json";
+import { LiaLinkedin } from "react-icons/lia";
 
 export default function Connect({ css }: { css: string }) {
   return (
@@ -20,13 +20,13 @@ export default function Connect({ css }: { css: string }) {
           Mail Me
         </a>
         <a
-          href={fiverr_url}
+          href={linkedin_url}
           target="blank"
           rel="noopener noreferrer"
-          className="text-[40px] text-(--muted) hover:text-(--primary-hover) duration-200 "
-          title="Fiverr"
+          className="text-[50px] text-(--muted) hover:text-(--primary-hover) duration-200 "
+          title="LinkedIn"
         >
-          <RiFiverrFill />
+          <LiaLinkedin />
         </a>
       </div>
     </div>

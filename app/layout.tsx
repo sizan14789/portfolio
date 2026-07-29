@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./themes.css";
 import Header from "@/ui/header/Header";
 import Footer from "@/ui/footer/Footer";
 import AppContext from "@/context/AppContext";
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Sizan",
-  description: "Portfolio page for Md. Sizan Molla",
+  description: "Portfolio of Md. Sizan Molla",
 };
 
 export default function RootLayout({
