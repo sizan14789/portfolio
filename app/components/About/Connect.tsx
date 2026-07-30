@@ -1,6 +1,7 @@
 import { Signature } from "lucide-react";
 import { linkedin_url, mail } from "@/data/sizan.json";
 import { LiaLinkedin } from "react-icons/lia";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Connect({ css }: { css: string }) {
   return (
@@ -23,10 +24,10 @@ export default function Connect({ css }: { css: string }) {
           href={linkedin_url}
           target="blank"
           rel="noopener noreferrer"
-          className="text-[50px] text-(--muted) hover:text-(--primary-hover) duration-200 "
+          className="text-[56px] text-(--muted) hover:text-(--primary) duration-200 "
           title="LinkedIn"
         >
-          <LiaLinkedin />
+          <FaLinkedin />
         </a>
       </div>
     </div>
