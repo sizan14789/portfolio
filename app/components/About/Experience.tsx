@@ -18,7 +18,7 @@ export default function Experience({ css }: { css: string }) {
           className="highlighted-txt links"
           title="CPCCU"
         >
-          Competitive Programming Club
+          Competitive Programming Camp
         </a>{" "}
         website where I designed and built the frontend layout for the{" "}
         <a
